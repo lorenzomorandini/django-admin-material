@@ -11,6 +11,7 @@
 {% endblock %}
 
 {% block usertools %}
+    {% if title %}<h1 id="content-title">{{ title }}</h1>{% endif %}
     {% if has_permission %}
         <div id="user-tools" class="right-align" style="margin-right: 10px;">
             {% block welcome-msg %}
@@ -35,6 +36,8 @@
         </div>
     {% endif %}
 {% endblock %}
+
+{% block content_title %}{% endblock %}
 
 {% block sidebar %}
     <ul id="slide-out" class="sidenav">

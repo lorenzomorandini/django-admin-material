@@ -1,6 +1,8 @@
 {% extends "admin/base_site.html" %}
 
 {% block branding %}
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-{{ block.super }}
+<a href="#" data-target="slide-out" class="sidenav-trigger" style="float: left;"><i class="material-icons">menu</i></a>
+<div style="padding-top: 5px;">
+    {{ block.super }}
+</div>
 {% endblock %}

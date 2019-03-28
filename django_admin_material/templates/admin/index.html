@@ -13,13 +13,13 @@
 <div id="content-main" class="container">
 
 {% if app_list %}
-    {% for app in app_list %}
-        <div class="row">
+    <div class="row">
+        {% for app in app_list %}
             <div class="col s12 m6">
-                <div class="card">
+                <div class="card small">
                     <div class="card-content">
-                      <span class="card-title"><a href="{{ app.app_url }}">{{ app.name }}</a></span>
-                      <p>{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}</p>
+                        <span class="card-title"><a href="{{ app.app_url }}">{{ app.name }}</a></span>
+                        <p>{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}</p>
                     </div>
                     <div class="card-action">
                         {% for model in app.models %}
@@ -30,8 +30,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+            {% if forloop.counter|divisibleby:3 %}
+    </div>
+    <div class="row">
+            {% endif %}
+        {% endfor %}
+    </div>
 {% else %}
     <p>{% trans "You don't have permission to view or edit anything." %}</p>
 {% endif %}

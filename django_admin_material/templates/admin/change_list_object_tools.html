@@ -1,0 +1,15 @@
+{% load i18n admin_urls %}
+
+{% block object-tools-items %}
+    {% if has_add_permission %}
+    <div class="fixed-action-btn">
+        <li>
+            {% url cl.opts|admin_urlname:'add' as add_url %}
+            <a class="btn-floating btn-large waves-effect waves-light red" 
+                href="{% add_preserved_filters add_url is_popup to_field %}">
+                <i class="material-icons">add</i>
+            </a>        
+        </li>
+    </div>
+    {% endif %}
+{% endblock %}

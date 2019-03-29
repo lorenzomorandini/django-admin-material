@@ -12,6 +12,17 @@ h1 {
     color: white;
 }
 
+.breadcrumbs {
+    background: #48545a;
+    color: rgb(201, 201, 201);
+    padding: 10px;
+}
+
+.breadcrumbs a {
+    color: white;
+    opacity: 10;
+}
+
 .sidenav-trigger i {
     margin: 10px;
 }
@@ -24,8 +35,14 @@ h1 {
     font-size: 15px;
     margin-left: 45px;
     margin-bottom: 0px;
+    float: left;
 }
 
 .card.small {
     height: 200px;
+}
+
+#user-tools {
+    padding-bottom: 10px;
+    margin-right: 10px;
 }

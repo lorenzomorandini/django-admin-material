@@ -13,7 +13,7 @@
 {% block usertools %}
     {% if title %}<h1 id="content-title">{{ title }}</h1>{% endif %}
     {% if has_permission %}
-        <div id="user-tools" class="right-align" style="margin-right: 10px;">
+        <div id="user-tools" class="right-align">
             {% block welcome-msg %}
                 {% trans 'Welcome,' %}
                 <strong>{% firstof user.get_short_name user.get_username %}</strong>.

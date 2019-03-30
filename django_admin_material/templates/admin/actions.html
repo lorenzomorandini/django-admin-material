@@ -1,0 +1,34 @@
+{% extends 'admin/actions.html' %}
+{% load i18n %}
+
+
+{% block actions %}
+<div class="row">
+    <div class="col s12">
+        <div class="card" id="actions-card">
+            <div class="row">
+                <div class="col s12">
+                    {% block actions-form %}
+                        {{ block.super }}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 right-align">
+                    {% block actions-submit %}
+                        <button type="submit" class="btn blue darken-3" title="{% trans "Run the selected action" %}" name="index" value="{{ action_index|default:0 }}">{% trans "Submit" %}</button>
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 right-align">
+                    {% block actions-counter %}
+                        {{ block.super }}
+                    {% endblock%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>$(document).ready(function(){$('select').formSelect();});</script>
+{% endblock %}

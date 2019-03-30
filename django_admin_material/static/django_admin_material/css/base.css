@@ -46,3 +46,50 @@ h1 {
     padding-bottom: 10px;
     margin-right: 10px;
 }
+
+.change-list .filtered .results {
+    margin-right: 0!important;
+}
+
+.results thead a {
+    font-weight: 10;
+    color: black;
+}
+
+.results tbody a {
+    font-weight: 10;
+}
+
+#changelist #toolbar {
+    background: white!important;
+    border: unset!important;
+    margin-right: unset!important;
+    padding: unset!important;
+    padding-left: 10px!important;
+}
+
+/* .material-icons{
+    color: #1a237e !important;
+    } */
+  
+  .material-icons.active {
+    color: unset!important;
+    }
+
+ /* label focus color
+ .input-field input[type=text]:focus + label {
+    color: #1565c0!important;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #1565c0!important;
+    box-shadow: 0 1px 0 0 #1565c0!important;
+  }
+
+ul.dropdown-content.select-dropdown li span {
+    color: #1565c0; /* no need for !important :) */
+}
+
+#actions-card {
+    padding: 10px;
+}

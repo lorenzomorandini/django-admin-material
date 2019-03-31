@@ -4,4 +4,4 @@ from . import models
 
 @admin.register(models.TestModel)
 class TestModelAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'text',)

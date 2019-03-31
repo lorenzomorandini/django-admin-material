@@ -54,6 +54,11 @@ h1 {
 .results thead a {
     font-weight: 10;
     color: black;
+    /* font-weight: bold; */
+}
+
+.results thead tr {
+    height: 60px;
 }
 
 .results tbody a {

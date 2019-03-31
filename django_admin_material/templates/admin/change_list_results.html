@@ -41,7 +41,7 @@
     $(document).ready(function() {
       $('input[type=checkbox]').each(function() {
           $(this).wrap('<label></label')
-          $(this).after('<span></span>')
+          $(this).after('<span class="checkbox-span"></span>')
           $(this).addClass('filled-in')
       })
     })

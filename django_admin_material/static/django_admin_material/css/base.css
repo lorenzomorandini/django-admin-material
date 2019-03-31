@@ -98,3 +98,8 @@ ul.dropdown-content.select-dropdown li span {
 #actions-card {
     padding: 10px;
 }
+
+.checkbox-span {
+    margin-left: 15px;
+    margin-right: 15px;
+}

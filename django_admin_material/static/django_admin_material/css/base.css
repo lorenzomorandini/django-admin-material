@@ -81,18 +81,23 @@ h1 {
     color: unset!important;
     }
 
- /* label focus color
+ /* label focus color */
  .input-field input[type=text]:focus + label {
     color: #1565c0!important;
 }
 /* label underline focus color */
-  .input-field input[type=text]:focus {
+  .input-field input[type=text]:focus{
     border-bottom: 1px solid #1565c0!important;
     box-shadow: 0 1px 0 0 #1565c0!important;
   }
 
 ul.dropdown-content.select-dropdown li span {
     color: #1565c0; /* no need for !important :) */
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #1565c0;
+    background-color: #1565c0;
 }
 
 #actions-card {

@@ -1,4 +1,4 @@
-<div class="input-field module aligned {{ fieldset.classes }}">
+<div class="module aligned {{ fieldset.classes }}">
     {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
     {% if fieldset.description %}
         <div class="description">{{ fieldset.description|safe }}</div>
@@ -7,10 +7,11 @@
         <div class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% if not line.has_visible_field %} hidden{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
             {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
             {% for field in line %}
+            <div class="input-field">
                 <div{% if not line.fields|length_is:'1' %} class="fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
                     {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
                     {% if field.is_checkbox %}
-                        {{ field.field }}{{ field.label_tag }}
+                    <div class="valign-wrapper"><label>{{ field.field }}<span>LOL</span></label></div>
                     {% else %}
                         {{ field.label_tag }}
                         {% if field.is_readonly %}
@@ -23,8 +24,15 @@
                         <div class="help">{{ field.field.help_text|safe }}</div>
                     {% endif %}
                 </div>
+            </div>
             {% endfor %}
         </div>
     {% endfor %}
 </div>
-    
+
+<script>
+$(document).ready(function(){
+    $('select').formSelect();
+    $("input[type='checkbox']").addClass("filled-in");
+});
+</script>

@@ -139,3 +139,11 @@ ul.dropdown-content.select-dropdown li span {
 .object-tools-dropdown {
     margin-right: 20px;
 }
+
+#change-form-card {
+    overflow: visible!important;
+}
+
+.form-row {
+    overflow: visible!important;
+}

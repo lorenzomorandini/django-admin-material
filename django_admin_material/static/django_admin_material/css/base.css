@@ -127,3 +127,11 @@ ul.dropdown-content.select-dropdown li span {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
+.actions {
+    padding-top: unset!important;
+}
+
+.filtered .actions {
+    margin-right: unset!important;
+}

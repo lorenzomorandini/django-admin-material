@@ -4,4 +4,9 @@ from . import models
 
 @admin.register(models.TestModel)
 class TestModelAdmin(admin.ModelAdmin):
-    list_display = ('id', 'text',)
+    list_display = ('id', 'text_1', 'text_2')
+
+
+@admin.register(models.Test2Model)
+class Test2ModelAdmin(admin.ModelAdmin):
+    list_display = ('id', 'test')

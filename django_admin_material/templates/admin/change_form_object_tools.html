@@ -1,0 +1,10 @@
+{% extends 'admin/change_form_object_tools.html' %}
+
+{% block object-tools-items %}
+<ul id="dropdown" class="dropdown-content">
+  {{ block.super }}
+</ul>
+<div class="right-align object-tools-dropdown">
+    <a class="btn dropdown-trigger blue-grey darken-4" href="#!" data-target="dropdown">Tools<i class="material-icons right">arrow_drop_down</i></a>
+</div>
+{% endblock %}

@@ -135,3 +135,7 @@ ul.dropdown-content.select-dropdown li span {
 .filtered .actions {
     margin-right: unset!important;
 }
+
+.object-tools-dropdown {
+    margin-right: 20px;
+}

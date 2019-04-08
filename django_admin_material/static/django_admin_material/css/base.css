@@ -101,7 +101,9 @@ ul.dropdown-content.select-dropdown li span {
 }
 
 #actions-card {
-    padding: 10px;
+    /* padding-left: 10px; */
+    padding: 5px;
+    padding-bottom: 0px;
 }
 
 #filter-card {
@@ -115,4 +117,13 @@ ul.dropdown-content.select-dropdown li span {
 
 .right-col-row {
     margin-bottom: 0px;
+}
+
+#search-button {
+    width: 100%;
+}
+
+.filter-row {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }

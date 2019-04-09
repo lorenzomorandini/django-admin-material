@@ -147,3 +147,29 @@ ul.dropdown-content.select-dropdown li span {
 .form-row {
     overflow: visible!important;
 }
+
+/* Messages */
+
+.messagelist {
+    margin: 0px;
+}
+
+.messagelist li {
+    padding: 10px;
+}
+
+.success {
+    background-color: #a5d6a7;
+}
+
+.error {
+    background-color: #ef9a9a;
+}
+
+.alert {
+    background-color: #fff59d;
+}
+
+.info {
+    background-color: #90caf9;
+}

@@ -1,0 +1,8 @@
+.related-widget-wrapper {
+    overflow: visible;
+    float: unset;
+}
+
+form .related-widget-wrapper ul {
+    display: none;
+}

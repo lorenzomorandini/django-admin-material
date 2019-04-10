@@ -5,6 +5,15 @@ from . import models
 @admin.register(models.TestModel)
 class TestModelAdmin(admin.ModelAdmin):
     list_display = ('id', 'text_1', 'text_2')
+    fieldsets = (
+        (None, {
+            'fields': (
+                ('text_1', 'text_2'),
+                ('choice_1'),
+                'boolean_1'
+            )
+        }),
+    )
 
 
 @admin.register(models.Test2Model)

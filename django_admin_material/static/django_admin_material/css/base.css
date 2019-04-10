@@ -65,6 +65,14 @@ h1 {
     font-weight: 10;
 }
 
+.results th {
+    padding-left: 10px!important;
+}
+
+.results td {
+    padding-left: 10px!important;
+}
+
 #changelist #toolbar {
     background: white!important;
     border: unset!important;

@@ -10,3 +10,4 @@ class TestModelAdmin(admin.ModelAdmin):
 @admin.register(models.Test2Model)
 class Test2ModelAdmin(admin.ModelAdmin):
     list_display = ('id', 'test')
+    raw_id_fields = ('test_2',)

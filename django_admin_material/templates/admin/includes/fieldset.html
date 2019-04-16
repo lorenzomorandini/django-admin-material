@@ -1,4 +1,14 @@
 {% load djangoadminmaterial %}
+<style>
+.select2 {
+    width: 100%!important;
+    height: 3rem;
+    border-bottom: 1px solid #9e9e9e;
+}
+.select2-selection {
+    border: unset!important;
+}
+</style>
 <div class="module aligned {{ fieldset.classes }}">
     {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
     {% if fieldset.description %}

@@ -23,3 +23,4 @@ class TestModel(models.Model):
 class Test2Model(models.Model):
     test = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE)
     test_2 = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE, related_name='test2s')
+    test_3 = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE, related_name='test3s')

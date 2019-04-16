@@ -15,3 +15,25 @@
     </div>
 </div>
 {% endblock %}
+
+{% block inline_field_sets %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 card" id="inlines-card">
+            {{ block.super }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block after_related_objects %}
+<script>
+    $(document).ready(function() {
+      $('input[type=checkbox]').each(function() {
+          $(this).wrap('<label></label')
+          $(this).after('<span class="checkbox-span"></span>')
+          $(this).addClass('filled-in')
+      })
+    })
+</script>
+{% endblock %}

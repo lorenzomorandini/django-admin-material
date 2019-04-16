@@ -216,3 +216,23 @@ ul.dropdown-content.select-dropdown li span {
     background-color: rgba(0,0,0,0.03)!important;
     color: #1565c0!important;
 }
+
+#inlines-card h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#inlines-card .inline-deletelink {
+    background: url(../../admin/img/icon-no.svg);
+    width: 25px;
+    height: 25px;
+}
+
+.inline-group .tabular tr.add-row td a {
+    background: none!important;
+}
+
+.inline-group .tabular td.original p {
+    overflow: visible!important;
+    /* top: 120px!important; */
+}

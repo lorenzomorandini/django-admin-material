@@ -24,3 +24,8 @@ class Test2Model(models.Model):
     test = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE)
     test_2 = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE, related_name='test2s')
     test_3 = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE, related_name='test3s')
+
+
+class Test3Model(models.Model):
+    test_4 = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE)
+    text = models.CharField('text', max_length=50, blank=True)

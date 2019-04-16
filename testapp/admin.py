@@ -2,10 +2,16 @@ from django.contrib import admin
 from . import models
 
 
+class Test3ModelInline(admin.TabularInline):
+    model = models.Test3Model
+    extra = 1
+
+
 @admin.register(models.TestModel)
 class TestModelAdmin(admin.ModelAdmin):
     list_display = ('id', 'text_1', 'text_2')
     search_fields = ('text_1', 'text_2')
+    inlines = [Test3ModelInline]
     fieldsets = (
         (None, {
             'fields': (

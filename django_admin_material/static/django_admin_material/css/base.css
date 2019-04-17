@@ -12,6 +12,10 @@ h1 {
     color: white;
 }
 
+#sidebar-background-img {
+    max-width: 100%;
+}
+
 .breadcrumbs {
     background: #48545a;
     color: rgb(201, 201, 201);

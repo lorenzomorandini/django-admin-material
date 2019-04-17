@@ -29,3 +29,4 @@ class Test2Model(models.Model):
 class Test3Model(models.Model):
     test_4 = models.ForeignKey(TestModel, blank=True, null=True, on_delete=models.CASCADE)
     text = models.CharField('text', max_length=50, blank=True)
+    text_2 = models.CharField('text 2', max_length=50, blank=True, choices=CHOICES_1)

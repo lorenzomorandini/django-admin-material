@@ -6,3 +6,11 @@
 form .related-widget-wrapper ul {
     display: none;
 }
+
+fieldset {
+    border: none;
+}
+
+.vCheckboxLabel {
+    display: none;
+}

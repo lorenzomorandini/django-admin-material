@@ -32,7 +32,18 @@
       $('input[type=checkbox]').each(function() {
             if (!$(this).parent().is('label')) {
                 $(this).wrap('<label></label')
-                $(this).after('<span class="checkbox-span"></span>')
+                // alert($("label[for='id_test3model_set-0-DELETE']").text());
+                var label = $("label[for='" + $(this).attr('id') + "']")
+                if (label) {
+                    // alert(label.text())
+                    $(this).after('<span class="checkbox-span">' + label.text() + '</span>')
+                }else {
+                    $(this).after('<span class="checkbox-span"></span>')
+                }
+                // if ($(this).next().hasClass('.vCheckboxLabel')) {
+                //     alert('lol');
+                // }
+                
                 $(this).addClass('filled-in')
             }
       })

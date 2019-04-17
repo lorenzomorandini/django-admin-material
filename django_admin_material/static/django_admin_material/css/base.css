@@ -232,6 +232,10 @@ ul.dropdown-content.select-dropdown li span {
     background: none!important;
 }
 
+.inline-group div.add-row a {
+    background: none!important;
+}
+
 .inline-group .tabular td.original p {
     overflow: visible!important;
     /* top: 120px!important; */

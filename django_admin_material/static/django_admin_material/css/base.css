@@ -221,11 +221,6 @@ ul.dropdown-content.select-dropdown li span {
     color: #1565c0!important;
 }
 
-#inlines-card h2 {
-    font-size: 1.5rem;
-    font-weight: 200;
-}
-
 #inlines-card .inline-deletelink {
     background: url(../../admin/img/icon-no.svg);
     width: 25px;
@@ -243,4 +238,21 @@ ul.dropdown-content.select-dropdown li span {
 .inline-group .tabular td.original p {
     overflow: visible!important;
     /* top: 120px!important; */
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.selector .selector-available h2 {
+    background: unset!important;
+    border: unset;
+    border-radius: unset;
+}
+
+.selector .selector-chosen h2 {
+    background: #1565c0;
+    border: unset;
+    border-radius: unset;
 }

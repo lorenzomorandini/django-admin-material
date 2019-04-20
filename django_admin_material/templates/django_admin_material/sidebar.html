@@ -6,7 +6,7 @@
             <img id="sidebar-background-img" src="{% static 'django_admin_material/img/sidebar-background.svg' %}">
         </div>
         <a href="#user"><img class="circle" src="{% static 'django_admin_material/img/sidebar-profile.svg' %}"></a>
-        <a href="#name"><span class="black-text name">{{ user|title }}</span></a>
+        <a href="#name"><span class="white-text name">{{ user|title }}</span></a>
     </div></li>
     <li><a href="{% url 'admin:index' %}"><i class="material-icons">home</i>{% trans 'Home' %}</a></li>
     <li><a class="subheader">{% trans 'Apps' %}</a></li>

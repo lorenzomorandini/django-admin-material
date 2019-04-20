@@ -23,7 +23,7 @@
                 <div{% if not line.fields|length_is:'1' %} class="fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
                     {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
                     {% if field.is_checkbox %}
-                    <div class="valign-wrapper"><label>{{ field.field }}<span>LOL</span></label></div>
+                    <div class="valign-wrapper"><label>{{ field.field }}<span>{{ field.label_tag }}</span></label></div>
                     {% else %}
                         {{ field.label_tag }}
                         {% if field.is_readonly %}
@@ -45,7 +45,13 @@
 
 <script>
 $(document).ready(function(){
-    $('select').formSelect();
+    var elem = $('select');
+    if (elem.parents('.selector').length) {
+        // elem.formSelect();
+        elem.addClass("browser-default");
+    }
+    elem.formSelect();
+    // $('select').formSelect();
     $("input[type='checkbox']").addClass("filled-in");
 });
 </script>

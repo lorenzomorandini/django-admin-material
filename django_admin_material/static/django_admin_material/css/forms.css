@@ -7,6 +7,34 @@ form .related-widget-wrapper ul {
     display: none;
 }
 
+.selector ul.selector-chooser {
+    display: block;
+    background-color: unset;
+    border-radius: unset;
+}
+
+/* .selector-add {
+    background: url("../../django_admin_material/img/arrow-right.svg");
+    height: 20px;
+}
+
+.selector-remove {
+    background: url("../../django_admin_material/img/arrow-left.svg");
+    height: 20px;
+}
+
+.selector .selector-filter {
+    border: none;
+}
+
+a.selector-chooseall {
+    background: url("../../django_admin_material/img/arrow-left.svg");
+} */
+
+/* a.selector-clearall {
+    background: url("../../django_admin_material/img/arrow-left.svg") -128px no-repeat;
+} */
+
 fieldset {
     border: none;
 }

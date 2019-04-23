@@ -1,7 +1,9 @@
 {% extends "admin/base_site.html" %}
 
 {% block branding %}
+{% if user.is_authenticated %}
 <a href="#" data-target="slide-out" class="sidenav-trigger" style="float: left;"><i class="material-icons">menu</i></a>
+{% endif %}
 <div style="padding-top: 5px;">
     {{ block.super }}
 </div>

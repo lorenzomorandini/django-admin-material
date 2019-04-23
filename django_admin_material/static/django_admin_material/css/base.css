@@ -39,7 +39,7 @@ h1 {
     font-size: 15px;
     margin-left: 45px;
     margin-bottom: 0px;
-    float: left;
+    /* float: left; */
 }
 
 .card.small {

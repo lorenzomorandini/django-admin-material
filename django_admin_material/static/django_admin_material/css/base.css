@@ -256,3 +256,18 @@ h2 {
     border: unset;
     border-radius: unset;
 }
+
+.errornote {
+    margin: 0px;
+    padding: 10px;
+    background: #ef9a9a;
+}
+
+.invalid input {
+    border-bottom: 1px solid #F44336!important;
+    box-shadow: 0 1px 0 0 #F44336!important;
+}
+
+.errorlist li {
+    color: #F44336;
+}

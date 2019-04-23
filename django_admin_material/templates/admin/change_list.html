@@ -18,8 +18,10 @@
             {% endif %}
             <div class="module{% if cl.has_filters %} filtered{% endif %}" id="changelist">
               <form id="changelist-form" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %} novalidate>{% csrf_token %}
-              {% if action_form and cl.show_admin_actions %}
-                {% admin_actions %}
+              {% if action_form and cl.show_admin_actions %}              
+                <div class="card">
+                  {% admin_actions %}
+                </div>
               {% endif %}
               {% block date_hierarchy %}{{ block.super }}{% endblock %}
               

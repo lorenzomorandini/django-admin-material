@@ -2,26 +2,22 @@
 {% load i18n %}
 
 {% block actions %}
-<div class="row" style="margin-bottom: unset;">
-    <div class="col s12 card" id="actions-card">
-        <div class="row valign-wrapper">
-            <div class="col s6" style="margin-left: 50px;">
-                {% block actions-form %}
-                    {{ block.super }}
-                {% endblock %}
-            </div>
-            <div class="col s4">
-                {% block actions-counter %}
-                    {{ block.super }}
-                {% endblock%}
-            </div>
-            <div class="col s2" style="margin-right: 50px;">
-                {% block actions-submit %}
-                    <button type="submit" class="btn blue darken-3" title="{% trans "Run the selected action" %}" name="index" value="{{ action_index|default:0 }}">{% trans "GO" %}</button>
-                {% endblock %}
-            </div>
+    <div class="row valign-wrapper">
+        <div class="col s6" style="margin-left: 50px;">
+            {% block actions-form %}
+                {{ block.super }}
+            {% endblock %}
+        </div>
+        <div class="col s4">
+            {% block actions-counter %}
+                {{ block.super }}
+            {% endblock%}
+        </div>
+        <div class="col s2" style="margin-right: 50px;">
+            {% block actions-submit %}
+                <button type="submit" class="btn blue darken-3" title="{% trans "Run the selected action" %}" name="index" value="{{ action_index|default:0 }}">{% trans "GO" %}</button>
+            {% endblock %}
         </div>
     </div>
-</div>
 <script>$(document).ready(function(){$('select').formSelect();});</script>
 {% endblock %}

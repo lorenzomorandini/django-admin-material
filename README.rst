@@ -14,7 +14,11 @@ I will release the version 1.0.0 once it becomes stable and production ready.
 Installation
 -----------
 
-1. Add "django_admin_material" to your INSTALLED_APPS setting like this::
+1. Install using::
+
+    pip install django-admin-material
+
+2. Add "django_admin_material" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...

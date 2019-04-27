@@ -7,6 +7,10 @@ It is based on Material Design by Google https://material.io
 
 The framework used is Materialize CSS https://materializecss.com
 
+NOTE: This project is still under development. Feel free to contribute and
+open new issues if you find any problem.
+I will release the version 1.0.0 once it becomes stable and production ready.
+
 Installation
 -----------
 

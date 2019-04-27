@@ -2,3 +2,5 @@
 *.pyc
 *.sqlite3
 .DS_Store
+dist/*
+django_admin_material.egg-info/*

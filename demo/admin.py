@@ -14,13 +14,20 @@ class Model1Admin(admin.ModelAdmin):
     inlines = [Model3Inline]
     fieldsets = (
         (None, {
+            'classes': ('material-tab', 'material-tab-try1',),
             'fields': (
                 ('text_1', 'text_2'),
+            )
+        }),
+        ('Try 2', {
+            'classes': ('material-tab', 'material-tab-try2',),
+            'fields': (
                 ('choice_1'),
                 'boolean_1'
             )
         }),
     )
+    material_tabs = (('try1', 'Try 1'), ('try2', 'Try 2'))
 
 
 @admin.register(models.Model2)

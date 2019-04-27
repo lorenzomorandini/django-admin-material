@@ -9,7 +9,7 @@
     border: unset!important;
 }
 </style>
-<div class="module aligned {{ fieldset.classes }}">
+<div class="module aligned {{ fieldset.classes }}" {% if 'material-tab' in fieldset.classes %}id="{{ fieldset.classes|clean_material_tab }}"{% endif %}>
     {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
     {% if fieldset.description %}
         <div class="description">{{ fieldset.description|safe }}</div>

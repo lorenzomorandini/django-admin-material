@@ -1,6 +1,3 @@
-# django-admin-material
-
-
 ===============
 django-admin-material
 ===============
@@ -20,20 +17,18 @@ Installation
         'django-admin-material',
     ]
 
-    It should be as high as possible, definetly higher than 'django.contrib.admin'
+It should be as high as possible, definetly higher than 'django.contrib.admin'
 
 Demo
 -----------
 
 1. Download/clone this repository
-2. Run
-.. code:: bash
+2. Run:: bash
     ./reset_db.sh
 
-    It will install the necessary migration and fixtures
+It will install the necessary migration and fixtures
 
-3. Run
-.. code:: bash
+3. Run:: bash
     python3 manage.py runserver
 
 4. Visit http://localhost:8000/admin

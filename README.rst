@@ -23,15 +23,19 @@ Demo
 -----------
 
 1. Download/clone this repository
-2. Run::
+2. Run (possibly in a virtual environment)::
+
+    pip install -r requirements.txt
+
+3. Run::
 
     ./reset_db.sh
 
 It will install the necessary migration and fixtures
 
-3. Run::
+4. Run::
 
     python3 manage.py runserver
 
-4. Visit http://localhost:8000/admin
-5. Log in using "admin:admin"
+5. Visit http://localhost:8000/admin
+6. Log in using "admin:admin"

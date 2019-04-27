@@ -2,3 +2,7 @@ include LICENSE
 include README.rst
 recursive-include django_admin_material/static *
 recursive-include django_admin_material/templates *
+
+exclude reset_db.sh
+recursive-exclude demo *
+recursive-exclude settings *

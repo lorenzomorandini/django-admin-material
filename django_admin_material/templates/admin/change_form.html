@@ -30,22 +30,16 @@
 <script>
     $(document).ready(function() {
       $('input[type=checkbox]').each(function() {
-            if (!$(this).parent().is('label')) {
-                $(this).wrap('<label></label')
-                // alert($("label[for='id_test3model_set-0-DELETE']").text());
-                var label = $("label[for='" + $(this).attr('id') + "']")
-                if (label) {
-                    // alert(label.text())
-                    $(this).after('<span class="checkbox-span">' + label.text() + '</span>')
-                }else {
-                    $(this).after('<span class="checkbox-span"></span>')
-                }
-                // if ($(this).next().hasClass('.vCheckboxLabel')) {
-                //     alert('lol');
-                // }
-                
-                $(this).addClass('filled-in')
+        if (!$(this).parent().is('label')) {
+            $(this).wrap('<label></label')
+            var label = $("label[for='" + $(this).attr('id') + "']")
+            if (label) {
+                $(this).after('<span class="checkbox-span">' + label.text() + '</span>')
+            }else {
+                $(this).after('<span class="checkbox-span"></span>')
             }
+            $(this).addClass('filled-in')
+        }
       })
     })
 </script>

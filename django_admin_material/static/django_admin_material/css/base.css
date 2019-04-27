@@ -1,3 +1,5 @@
+/* base */
+
 h1 {
     margin-top: 0px;
     font-size: 30px;
@@ -51,6 +53,8 @@ h1 {
     margin-right: 10px;
 }
 
+/* change list */
+
 .change-list .filtered .results {
     margin-right: 0!important;
 }
@@ -84,24 +88,20 @@ h1 {
     padding: unset!important;
     padding-left: 10px!important;
 }
-
-/* .material-icons{
-    color: #1a237e !important;
-    } */
   
-  .material-icons.active {
+.material-icons.active {
     color: unset!important;
-    }
+}
 
  /* label focus color */
- input:focus + label {
+input:focus + label {
     color: #1565c0!important;
 }
 /* label underline focus color */
-  input:focus{
+input:focus{
     border-bottom: 1px solid #1565c0!important;
     box-shadow: 0 1px 0 0 #1565c0!important;
-  }
+}
 
 ul.dropdown-content.select-dropdown li span {
     color: #1565c0; /* no need for !important :) */
@@ -117,7 +117,6 @@ ul.dropdown-content.select-dropdown li span {
 }
 
 #actions-card {
-    /* padding-left: 10px; */
     padding: 5px;
     padding-bottom: 0px;
 }
@@ -156,6 +155,8 @@ ul.dropdown-content.select-dropdown li span {
     margin-right: 20px;
 }
 
+/* change form */
+
 #change-form-card {
     overflow: visible!important;
 }
@@ -189,6 +190,8 @@ ul.dropdown-content.select-dropdown li span {
 .info {
     background-color: #90caf9;
 }
+
+/* select2 */
 
 .select2-results__options {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);

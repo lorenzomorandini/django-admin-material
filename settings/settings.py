@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django_admin_material',
-    'testapp',
+    'demo',
     # django
     'django.contrib.admin',
     'django.contrib.auth',

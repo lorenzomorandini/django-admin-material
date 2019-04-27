@@ -2,16 +2,16 @@ from django.contrib import admin
 from . import models
 
 
-class Test3ModelInline(admin.TabularInline):
-    model = models.Test3Model
+class Model3Inline(admin.TabularInline):
+    model = models.Model3
     extra = 1
 
 
-@admin.register(models.TestModel)
-class TestModelAdmin(admin.ModelAdmin):
+@admin.register(models.Model1)
+class Model1Admin(admin.ModelAdmin):
     list_display = ('id', 'text_1', 'text_2')
     search_fields = ('text_1', 'text_2')
-    inlines = [Test3ModelInline]
+    inlines = [Model3Inline]
     fieldsets = (
         (None, {
             'fields': (
@@ -23,8 +23,8 @@ class TestModelAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(models.Test2Model)
-class Test2ModelAdmin(admin.ModelAdmin):
+@admin.register(models.Model2)
+class Model2Admin(admin.ModelAdmin):
     list_display = ('id', 'test')
     raw_id_fields = ('test_2',)
     autocomplete_fields = ('test_3',)

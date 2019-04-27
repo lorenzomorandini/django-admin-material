@@ -10,11 +10,11 @@ The framework used is Materialize CSS https://materializecss.com
 Installation
 -----------
 
-1. Add "django-admin-material" to your INSTALLED_APPS setting like this::
+1. Add "django_admin_material" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
-        'django-admin-material',
+        'django_admin_material',
     ]
 
 It should be as high as possible, definetly higher than 'django.contrib.admin'
@@ -39,3 +39,19 @@ It will install the necessary migration and fixtures
 
 5. Visit http://localhost:8000/admin
 6. Log in using "admin:admin"
+
+
+Examples
+-----------
+
+.. image:: docs/images/dashboard.png
+   :width: 600
+
+.. image:: docs/images/changelist.png
+   :width: 600
+
+.. image:: docs/images/form.png
+   :width: 600
+
+.. image:: docs/images/inline.png
+   :width: 600

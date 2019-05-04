@@ -278,3 +278,8 @@ h2 {
 .errorlist li {
     color: #F44336;
 }
+
+[type="radio"]:checked+span:after {
+    background-color: #1565c0;
+    border: 2px solid #1565c0;
+}

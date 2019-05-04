@@ -102,6 +102,15 @@ input:focus{
     border-bottom: 1px solid #1565c0!important;
     box-shadow: 0 1px 0 0 #1565c0!important;
 }
+/* textarea color */
+.input-field textarea:focus + label {
+    color: #1565c0 !important;
+}
+  
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #1565c0 !important;
+  box-shadow: 0 1px 0 0 #1565c0 !important
+}
 
 ul.dropdown-content.select-dropdown li span {
     color: #1565c0; /* no need for !important :) */

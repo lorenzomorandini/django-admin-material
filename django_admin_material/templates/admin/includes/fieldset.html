@@ -20,7 +20,7 @@
             {% for field in line %}
             {% with line.fields|length as cols%}
             <div class="col s{{ 12|div:cols }} {% if field.errors %}invalid{% endif %}">
-                <div{% if not line.fields|length_is:'1' %} class=" input-field fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
+                <div{% if not line.fields|length_is:'1' %} class="input-field fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% else %} class="input-field"{% endif %}> 
                     {% if field.is_checkbox %}
                     <div class="valign-wrapper"><label>{{ field.field }}<span>{{ field.label_tag }}</span></label></div>
                     {% else %}

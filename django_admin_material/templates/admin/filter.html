@@ -1,17 +1,15 @@
 {% load i18n %}
 
 <div class="row input-field filter-row">
-    <div class="col s12">
-        <select onchange="go_from_select(this.options[this.selectedIndex].value)">
-            {% for choice in choices %}
-                <option {% if choice.selected %} selected="selected"{% endif %} 
-                    value="{{ choice.query_string|iriencode }}">
-                    {{ choice.display }}
-                </option>
-            {% endfor %}
-        </select>
-        <label>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</label>
-    </div>
+    <select onchange="go_from_select(this.options[this.selectedIndex].value)">
+        {% for choice in choices %}
+            <option {% if choice.selected %} selected="selected"{% endif %} 
+                value="{{ choice.query_string|iriencode }}">
+                {{ choice.display }}
+            </option>
+        {% endfor %}
+    </select>
+    <label>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</label>
 </div>
 
 <script type="text/javascript">var go_from_select = function(opt) { window.location = window.location.pathname + opt };</script>
